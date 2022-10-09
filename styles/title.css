@@ -1,0 +1,39 @@
+.div-header > h1, h2, p, span {
+    color:var( --color-grey-6) ;
+}
+
+.div-header > h1{
+    margin-top:var(--title-1);
+    font-size: var( --title-4);
+}
+.div-header > h2{
+    font-size: var(--title-3);
+}
+
+.div-header > p{
+    font-size:var( --text-2);
+    font-weight: 600;
+}
+
+.section-vagas > h3  {
+color: var(--color-grey-2);
+}
+
+.h2-vagas{
+    color: var(--color-grey-1);
+    font-size: 22px;
+    font-weight: 600;
+    margin: 60px -9px 70px;
+}
+.section-vagas > div > p{
+    color: var(--color-grey-2   );
+}
+
+.paragraph-lorem{
+    line-height: var(  --title-3);
+}
+
+.title-vagas-selecionadas{
+    color: var(--color-grey-1);
+    margin-bottom: 79px;
+}

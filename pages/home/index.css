@@ -1,1 +1,83 @@
 /* Desenvolva sua estilização aqui... */
+
+
+header{
+    width: 100%;
+    height: 630px;
+    background-image: url('../../assets/img/Rectangle\ 46.svg') ;    
+    background-size: cover;
+    background-position: center;
+    position: relative;    
+   
+}
+
+header:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+
+.div-header{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    opacity: 0.9;
+    height: 100%;
+    gap: var( --title-1);
+   
+
+}
+
+.div-card{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 500px;
+    line-height: 32px;
+}
+
+.div-info{  
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+}
+.div-info > p{
+    color: var(--color-grey-2);
+}
+
+.div-button{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.div-info-vagas{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.vagas-selecionadas{
+    height: 450px;
+}
+
+.div-pessoa{
+    width: 285px;
+    height: 156px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.div-card-vagas{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
