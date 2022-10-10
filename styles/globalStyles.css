@@ -5,6 +5,7 @@
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  list-style: none;
 }
 
 img {
@@ -35,6 +36,7 @@ img {
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: var(--color-grey-4);
 }
 
 .container {
