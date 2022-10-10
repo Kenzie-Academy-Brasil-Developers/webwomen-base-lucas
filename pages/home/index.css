@@ -37,8 +37,9 @@ header:before {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    height: 500px;
-    line-height: 32px;
+    background-color: var(--color-grey-5);
+    padding: 25px;
+
 }
 
 .div-info{  
@@ -63,9 +64,7 @@ header:before {
     gap: 60px;
 }
 
-.vagas-selecionadas{
-    height: 450px;
-}
+
 
 .div-pessoa{
     width: 285px;
@@ -78,6 +77,46 @@ header:before {
 .div-card-vagas{
     display: flex;
     justify-content: space-between;
-    width: 300px;
+    width: 100%;
 }
+
+.section-vagas {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.vagas-selecionadas{
+    background-color: var(--color-grey-5);
+    height: 300px;
+}
+
+
+@media (min-width:782px){
+    main{
+        display: flex;
+        gap: 20px;
+    }
+    .vagas-selecionadas{
+        margin-top: 162px;
+    }
+    .div-button{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        justify-content: space-between;
+    }
+    .section-render-jobs{        
+    width: 60%;
+
+    }
+    .vagas-selecionadas{
+        height: 316px;
+        width: 400px;
+}
+    }
+
 
