@@ -1,8 +1,8 @@
 /* Desenvolva sua lógica aqui... */
 
 const createJob = (jobsData) => {
-  const {id, enterprise, title, location, descrition, modalities } = jobsData
-  
+  const {id, enterprise, title, location, descrition, modalities } = jobsData  
+
   const li = document.createElement("li")
   const divCard = document.createElement("div")
   const h3 = document.createElement("h3")
@@ -13,18 +13,7 @@ const createJob = (jobsData) => {
   const divButton = document.createElement("div")
   const buttonModalities = document.createElement("button")
   const buttonCandidatar = document.createElement("button")
-  // buttonCandidatar.addEventListener('click', (event) => {
-  //   event.preventDefault()
-  //   if(jobAside.includes === element){
-  //     buttonCandidatar.innerText = "remover candidatura"
-  //   }else{
-  //     buttonCandidatar.innerText = "candidatura"
-  //   }
-  // })
-
-
-
-
+  
 
   divCard.classList.add("div-card")
   h3.innerText = title
@@ -39,8 +28,6 @@ const createJob = (jobsData) => {
   buttonCandidatar.innerText = "Candidatar",
   buttonCandidatar.classList = 'candidatar buttonRemover'
   buttonCandidatar.id = id
-
- 
 
 
 divInfo.append(pEmterprise, PLocation),
@@ -90,20 +77,18 @@ const renderJobInInside = () => {
             jobArr(jobAside)
           }
          
-          console.log(jobAside);
          
         }else if(elm.contains){
           !elm
         }
        
         const jobPref = localStorage.getItem('candidatar')
+        
       
         if(!jobPref){
           localStorage.setItem('candidatar', true)
         }
-        if(jobPref){
-          localStorage.removeItem('candidatar')
-        }
+      
       } )      
 
      
@@ -152,7 +137,15 @@ PLocation.innerText = location
 img.src = './assets/img/trash.svg'
 img.addEventListener('click', ( event) => {
   event.preventDefault()
+
+  
   closedJob(index)
+
+  const jobPref = localStorage.getItem('candidatar')
+  
+  if(jobPref){
+    localStorage.removeItem('candidatar')
+  }
 
 })
 
@@ -176,6 +169,7 @@ const closedJob = (index) => {
 
   jobAside.splice(index, 1)
   jobArr(jobAside) 
+  
   
   
  }
