@@ -10,7 +10,7 @@ const changeButton = () => {
             // element.classList.toggle('button-seguindo')
             if (Index + 1 == listaDeHokages.length) {
                 Index = 0;
-                closedJob()
+                
             } else {
                 element.classList.toggle('buttonRemover')
                 Index = Index + 1;
@@ -24,5 +24,6 @@ const changeButton = () => {
     }
     )
 }
+
 changeButton()
 
