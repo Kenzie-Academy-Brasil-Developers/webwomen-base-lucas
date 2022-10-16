@@ -86,7 +86,7 @@ const renderJobInInside = () => {
         
       
         if(!jobPref){
-          localStorage.setItem('candidatar', true)
+          localStorage.setItem('candidatar', JSON.stringify(elm))
         }
       
       } )      
@@ -169,7 +169,6 @@ const closedJob = (index) => {
 
   jobAside.splice(index, 1)
   jobArr(jobAside) 
-  
   
   
  }

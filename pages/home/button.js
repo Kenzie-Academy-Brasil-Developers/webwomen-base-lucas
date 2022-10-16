@@ -7,14 +7,14 @@ const changeButton = () => {
 
     botao.forEach((element) => {
         element.addEventListener('click', () => {
-            // element.classList.toggle('button-seguindo')
+            element.classList.toggle('button-seguindo')
             if (Index + 1 == listaDeHokages.length) {
                 Index = 0;
-                
+              
             } else {
                 element.classList.toggle('buttonRemover')
                 Index = Index + 1;
-              
+                
             }
             element.textContent = listaDeHokages[Index]
            
